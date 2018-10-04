@@ -1,14 +1,10 @@
-﻿<Window x:Class="Cinema.Presentation.Wpf.Views.MainView"
+﻿<Window x:Class="Cinema.Presentation.Wpf.MainView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Cinema.Presentation.Wpf.Views"
+        xmlns:local="clr-namespace:Cinema.Presentation.Wpf.Controls"
         mc:Ignorable="d"
-        Title="MainView" 
-        Height="300" 
-        Width="300">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="300" Width="300">
+    <ContentPresenter Content="{Binding Path=Current}"/>
 </Window>
