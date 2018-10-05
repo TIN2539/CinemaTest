@@ -1,5 +1,4 @@
-﻿using Cinema.Presentation.Wpf.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,18 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Cinema.Presentation.Wpf
+namespace Cinema.Presentation.Wpf.Controls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddControl.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class AddControl : UserControl
     {
-        public MainView(MainViewModel viewModel)
+        public AddControl()
         {
             InitializeComponent();
+        }
 
-            DataContext = viewModel;
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinema.Presentation.Wpf.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,14 @@ namespace Cinema.Presentation.Wpf
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            var viewModel = new MainViewModel();
+            var view = new MainView(viewModel);
+
+            view.Show();
+        }
     }
 }
