@@ -11,7 +11,7 @@ namespace Cinema.Presentation.Wpf.ViewModels
     {
         public MainViewModel()
         {
-            Current = new AddControl();
+            Current = new MainControl();
         }
 
         public object Current { get; set; }

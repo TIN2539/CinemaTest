@@ -18,9 +18,9 @@ namespace Cinema.Presentation.Wpf.Controls
     /// <summary>
     /// Interaction logic for AddFilmControl.xaml
     /// </summary>
-    public partial class MainFilmControl : UserControl
+    public partial class MainControl : UserControl
     {
-        public MainFilmControl()
+        public MainControl()
         {
             InitializeComponent();
         }

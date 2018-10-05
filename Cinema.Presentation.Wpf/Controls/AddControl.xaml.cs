@@ -24,10 +24,5 @@ namespace Cinema.Presentation.Wpf.Controls
         {
             InitializeComponent();
         }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }
