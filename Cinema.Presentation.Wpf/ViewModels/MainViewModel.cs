@@ -24,8 +24,7 @@ namespace Cinema.Presentation.Wpf.ViewModels
                )};
         public MainViewModel()
         {
-
-            Current = new MainControl();
+            Current = new ListControl();
         }
 
         public object Current { get; set; }
