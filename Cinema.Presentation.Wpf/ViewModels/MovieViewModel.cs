@@ -17,10 +17,5 @@ namespace Cinema.Presentation.Wpf.ViewModels
         }
 
         public string Title => movie.Title.Name;
-
-        public override string ToString()
-        {
-            return movie.Title.Name;
-        }
     }
 }
